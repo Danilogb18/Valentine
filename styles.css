@@ -15,7 +15,7 @@ h3{
 
 main{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.5)), url(imgs/background.png);
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.5)), url(imgs/background.png);
     background-size: contain;
     background-repeat: repeat;
     display: flex;
@@ -27,7 +27,7 @@ main{
 .card{
     max-width: 50%;
     padding: 20px;
-    border: 5px solid pink;
+    border: 8px solid pink;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
@@ -36,6 +36,15 @@ main{
     justify-content: center;
     text-align: center;
     color: #eee;
+    transition: transform 800ms;
+}
+
+.card.get-out{
+    transform: translate(-250%);
+}
+
+.card.card-right{
+    transform: translate(250%);
 }
 
 img{
@@ -51,16 +60,16 @@ button{
     width: 200px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    max-width: 50%;
+    max-width: 80%;
     margin: 0;
     color: black;
 }
 
 .button-row{
-    padding: 30px 0;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,10 +78,12 @@ button{
 }
 
 .yes-button{
-    background-color: green;
+    background-color: pink;
+    max-height: 70vh;
 }
 
 .no-button{
-    background-color: red;
+    background-color: rgb(28, 0, 0);
+    color: #eee;
 }
 
