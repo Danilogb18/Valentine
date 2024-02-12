@@ -2,7 +2,7 @@ const noButton = document.getElementsByClassName("no-button")[0];
 const yesButton = document.getElementsByClassName("yes-button")[0];
 
 const firstCard = document.getElementsByClassName("card")[0];
-const secondCard = document.getElementsByClassName("card-right")[1];
+const secondCard = document.getElementsByClassName("card-right")[0];
 
 const phrases = ['¿Qué?', 'Dale', 'Pero que ha pasao :(', 'Tu eres chistosa', 'Ya oe', 'Me vas a hacer sentir mal', ':(', 'Ta bien', 'Dale porfa', 'Porfa', 'Please', 'Im beggin', 'Mis nocheees', 'de eneroo', 'Dale', 'Fla', 'qui', 'ta', 'Shovana', ':((((', 'Bueno', 'PORFA', 'Me gustas', 'Aceptame o la vas a pasar mal']
 let phraseIndex = 0;
@@ -28,5 +28,5 @@ noButton.addEventListener("click", () => {
 
 yesButton.addEventListener("click", () => {
     firstCard.classList.add('get-out');
-    firstCard.classList.remove('card-right');
+    secondCard.classList.add('get-out-card-right');
 })

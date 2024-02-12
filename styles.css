@@ -15,7 +15,7 @@ h3{
 
 main{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.5)), url(imgs/background.png);
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.5)), url(imgs/collage-fondo.png);
     background-size: contain;
     background-repeat: repeat;
     display: flex;
@@ -36,15 +36,32 @@ main{
     justify-content: center;
     text-align: center;
     color: #eee;
-    transition: transform 800ms;
+    transition: 800ms;
 }
 
 .card.get-out{
+    display: none;
     transform: translate(-250%);
 }
 
-.card.card-right{
-    transform: translate(250%);
+.card-right{
+    max-width: 50%;
+    padding: 20px;
+    border: 8px solid pink;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #eee;
+    transition: transform 800ms;
+    display: none;
+}
+
+.card-right.get-out-card-right{
+    display: flex;
 }
 
 img{
