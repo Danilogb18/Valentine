@@ -73,7 +73,7 @@ img{
 }
 
 button{
-    height: 70px;
+    height: 80px;
     width: 200px;
     border: none;
     border-radius: 5px;
@@ -83,6 +83,7 @@ button{
     max-width: 80%;
     margin: 0;
     color: black;
+    text-align: center;
 }
 
 .button-row{
