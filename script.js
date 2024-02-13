@@ -7,6 +7,10 @@ const secondCard = document.getElementsByClassName("card-right")[0];
 const phrases = ['¿Qué?', 'Dale', 'Pero que ha pasao :(', 'Tu eres chistosa', 'Ya oe', 'Me vas a hacer sentir mal', ':(', 'Ta bien', 'Dale porfa', 'Porfa', 'Please', 'Im beggin', 'Mis nocheees', 'de eneroo', 'Dale', 'Fla', 'qui', 'ta', 'Shovana', ':((((', 'Bueno', 'PORFA', 'Me gustas', 'Aceptame o la vas a pasar mal', 'Con este son 25 rechazos oe', ':(((', 'Yo viajare', 'Aprendiendo', 'a seguiiir', 'Aceptame o no canto más', '💔​💔​💔​💔​']
 let phraseIndex = 0;
 
+const comprobanteButton = document.getElementsByClassName("comprobante-button")[0];
+
+
+//** Cambiar de frases al pulsar el botón no */
 noButton.addEventListener("click", () => {
     console.log(phraseIndex);
     var currentYesWidth = yesButton.offsetWidth;
@@ -29,4 +33,9 @@ noButton.addEventListener("click", () => {
 yesButton.addEventListener("click", () => {
     firstCard.classList.add('get-out');
     secondCard.classList.add('get-out-card-right');
+})
+
+
+comprobanteButton.addEventListener("click", () => {
+    window.open('https://wa.me/+5930962578964?text=Hola guapo si te acepto jiji eres muy inteligente y muy divertido y muy original y me gustas mucho ❤️​🥰​', '_blank')
 })
